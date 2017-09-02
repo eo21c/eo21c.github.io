@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>eo21c</title>
+	<meta charset="utf-8">
+	<meta http-equiv="refresh" content="15" >
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+	<link rel="shortcut icon" href="http://img.freepik.com/free-icon/businessman_318-72886.jpg?size=338c&ext=jpg" type="image/x-icon">
+</head>
+
+<body>
+
+	<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+  				<div class="container-fluid">
+    				<div class="navbar-header">
+      					<a class="navbar-brand" href="#">eo21c</a>
+    				</div>
+   						<ul class="nav navbar-nav">
+    					  <li class="active"><a href="#">Home</a></li>
+    					  <li><a href="#">Page 1</a></li>
+    					  <li><a href="#">Page 2</a></li>
+    					  <li><a href="#">Page 3</a></li>
+    					</ul>
+  				</div>
+			</nav>
+	</header>
+
+</body>
+
+<footer style="background-color: black;">
+	<div id="map" style="width:100%;height:200px"></div>
+
+		<script>
+			function myMap() {
+  			var myCenter = new google.maps.LatLng(26.9364,75.9238);
+  			var mapCanvas = document.getElementById("map");
+  			var mapOptions = {center: myCenter, zoom: 5};
+  			var map = new google.maps.Map(mapCanvas, mapOptions);
+  			var marker = new google.maps.Marker({position:myCenter});
+  			marker.setMap(map);
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvMxX_CQs7TYix2x3t4q7GDXaOGrd9Y44&callback=myMap"></script>
+		
+		<aside>
+			<div id="contact" class="container-fluid bg-grey">
+				<div style="background-color: white; text-align: center;">
+  					<a href="https://www.facebook.com/adarshp1998" target="blank"><i class="fa fa-facebook fa-fw"></i> </a>
+  					<a href="https://www.linkedin.com/in/adarsh-pathak-52b002129/" target="blank" ><i class="fa fa-linkedin fa-fw"></i> </a>
+  					<a href="https://github.com/adarshp199877" target="blank"><i class="fa fa-github fa-fw"></i> </a>
+   					<a href="https://stackoverflow.com/users/7747066/adarsh-pathak" target="blank"><i class="fa fa-stack-overflow fa-fw"></i> </a>
+   					<a href="https://eo21c.xyz" target="blank"><i class="fa fa-desktop fa-fw"></i> </a>
+  				</div>
+  			</div>	
+		</aside>
+			<div class="container">
+				<p style="text-align: center;">
+  					<a href="http://adarshp199877.github.io" target="blank" data-toggle="tooltip" title="All Right Reserved | 2017">&copy;Adarsh Pathak</a>
+				</p>
+			</div>
+			
+	<script>
+		$(document).ready(function(){
+    		$('[data-toggle="tooltip"]').tooltip();   
+				});
+	</script>
+	
+</footer>
+</html>
