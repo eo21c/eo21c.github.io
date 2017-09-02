@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>eo21c</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="refresh" content="15" >
+  <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" href="myweb.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+  
+  <link rel="shortcut icon" href="http://img.freepik.com/free-icon/businessman_318-72886.jpg?size=338c&ext=jpg" type="image/x-icon">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  
+       <style>
+  body {
+      position: relative; 
+      background-image: url('http://cdn.wonderfulengineering.com/wp-content/uploads/2014/05/laptop-wallpaper-5.jpg');
+      background-repeat: no-repeat;
+  }
+  #home {padding-top:430px;height:100%;color: #fff;}
+  #contact {padding-top:300px;height:100%;color: #fff;}
+  #about {padding-top:50px;height:100%;color: #fff;}
+  </style>
+  <header class="fullbg">
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+ 
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+            </button>
+            
+            <a class="navbar-brand" href="myweb.html">eo21c</a>
+        </div>
+          <div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                      <li><a href="myweb.html">Home</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                          <li><a href="http://eo21c.xyz" target="blank">Website</a></li>
+
+                  </ul>
+                </div>
+            </div>
+          </div>
+    </nav>    
+
+  
+      <div id="contact" class="container-fluid">
+      <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> LNMIIT, Jaipur, India</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +91 8107240831</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> adarshp199877@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+      </div>
+    
+        
+            
+  </header>
+  
+</body>
+
+<footer id="footer" style="background-color: black;padding-top:3px;height:30%;color: #fff;">
+  <div id="map" style="width:100%;height:300px"></div>
+
+    <script>
+      function myMap() {
+        var myCenter = new google.maps.LatLng(26.9364,75.9238);
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = {center: myCenter, zoom: 5};
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap(map);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvMxX_CQs7TYix2x3t4q7GDXaOGrd9Y44&callback=myMap"></script>
+    
+    <aside>
+      <div id="contact" class="container-fluid bg-grey">
+        <div style="background-color: white; text-align: center;">
+            <a href="https://www.facebook.com/adarshp1998" target="blank"><i class="fa fa-facebook fa-fw"></i> </a>
+            <a href="https://www.linkedin.com/in/adarsh-pathak-52b002129/" target="blank" ><i class="fa fa-linkedin fa-fw"></i> </a>
+            <a href="https://github.com/adarshp199877" target="blank"><i class="fa fa-github fa-fw"></i> </a>
+            <a href="https://stackoverflow.com/users/7747066/adarsh-pathak" target="blank"><i class="fa fa-stack-overflow fa-fw"></i> </a>
+            <a href="https://eo21c.xyz" target="blank"><i class="fa fa-desktop fa-fw"></i> </a>
+          </div>
+        </div>  
+    </aside>
+      <div class="container">
+        <p style="text-align: center;">
+            <a href="http://adarshp199877.github.io" target="blank" data-toggle="tooltip" title="All Right Reserved | 2017">&copy;Adarsh Pathak</a>
+        </p>
+      </div>
+      
+  <script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+        });
+  </script>
+  
+</footer>
+</html>
