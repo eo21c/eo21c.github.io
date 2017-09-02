@@ -3,39 +3,86 @@
 <head>
 	<title>eo21c</title>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<meta http-equiv="refresh" content="15" >
+	<link rel="stylesheet" href="animate.css">
+	<link rel="stylesheet" href="myweb.css">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
 	
 	<link rel="shortcut icon" href="http://img.freepik.com/free-icon/businessman_318-72886.jpg?size=338c&ext=jpg" type="image/x-icon">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	
+			 <style>
+  body {
+      position: relative; 
+      background-image: url('http://cdn.wonderfulengineering.com/wp-content/uploads/2014/05/laptop-wallpaper-5.jpg');
+      background-repeat: no-repeat;
+  }
+  #home {padding-top:430px;height:100%;color: #fff;}
+  #contact {padding-top:50px;height:100%;color: #fff;}
+  #about {padding-top:50px;height:100%;color: #fff;}
+  footer {padding-top:3px;height:60%;color: #fff;}
+  </style>
+  <header class="fullbg">
 
-	<header>
-			<nav class="navbar navbar-inverse navbar-fixed-top">
-  				<div class="container-fluid">
-    				<div class="navbar-header">
-      					<a class="navbar-brand" href="#home">eo21c</a>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+ 
+    		<div class="navbar-header">
+        		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          			<span class="icon-bar"></span>
+          				<span class="icon-bar"></span>
+          					<span class="icon-bar"></span>                        
+      			</button>
+      			
+      			<a class="navbar-brand" href="myweb.html">eo21c</a>
+    		</div>
+    			<div>
+    				  <div class="collapse navbar-collapse" id="myNavbar">
+    					    <ul class="nav navbar-nav">
+          						<li><a href="myweb.html">Home</a></li>
+        						  <li><a href="contact.html">Contact</a></li>
+        							  <li><a href="about.html">About</a></li>
+        								  <li><a href="http://eo21c.xyz" target="blank">Website</a></li>
+
+        					</ul>
+      					</div>
     				</div>
-   						<ul class="nav navbar-nav">
-    					  <li class="active"><a href="#home">Home</a></li>
-    					  <li><a href="#about">About</a></li>
-    					  <li><a href="#contact">Contact</a></li>
-    					  <li><a href="#service">Service</a></li>
-    					</ul>
   				</div>
-			</nav>
-	</header>
+		</nav>    
 
+	
+			<div id="home" class="container-fluid">
+				
+				<div id="home-sec">
+        <div class="overlay">
+            <div class="container">
+                <div class="row pad-top-bottom  move-me">
+                    <div class="col-lg-9 col-md-9 col-sm-9 text-center">
+                        <br><br><br><br><h1 class="wow bounceIn animated" data-wow-duration="1.5s" data-wow-delay=".4s">Hi! I am Adarsh Pathak.</h1>
+  <h1 class="typewrite wow bounceIn animated" data-wow-duration="1.5s" data-wow-delay=".4s" data-period="2000" data-type='["I Love Designing.", "I Like to Develop.", "I am Creative." ]'>
+    <span class="wrap"></span>
+  </h1><br>
+                    </div>
+
+	
+			</div>			
+	</header>
+	
 </body>
 
-<footer style="background-color: black;">
+<footer id="footer" style="background-color: black;">
 	<div id="map" style="width:100%;height:200px"></div>
 
 		<script>
